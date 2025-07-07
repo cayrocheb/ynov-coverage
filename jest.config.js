@@ -11,7 +11,7 @@ module.exports = {
     testMatch: ["<rootDir>/test/**/*.spec.ts"],
     collectCoverage: true,
     coverageDirectory: "coverage",
-    coverageReporters: ["html", "lcov", "text"],
+    coverageReporters: ["html", "lcov", "text", {file: "coverage.txt"}],
     collectCoverageFrom: ["src/**/*.ts"],
     coverageThreshold: {
         global: {
